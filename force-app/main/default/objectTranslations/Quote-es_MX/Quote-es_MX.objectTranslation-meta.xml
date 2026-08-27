@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cotización</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cotizaciones</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Una cotización no puede pasar del estado Aceptada a Disponible --></errorMessage>
+        <name>Cambio_Estado_No_Permitido</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Una Cotización en estado &apos;Nueva&apos; únicamente puede pasar al estado &apos;Cotización Disponible&apos; y debe tener al menos un producto relacionado. --></errorMessage>
+        <name>Cambio_Estado_Nuevo_a_Disponible</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para cambiar el estado de la cotización, Debe agregar un Producto --></errorMessage>
+        <name>Cotizacion_Validar_Precio_Total</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para crear una Cotización, el estado debe ser &apos;Nueva&apos;. --></errorMessage>
+        <name>Creacion_Cotizacion_Estado_Nueva</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para crear una Cotización, la Oportunidad asociada debe tener al menos un producto agregado. --></errorMessage>
+        <name>Creacion_Cotizacion_Regla_Productos</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Esta cotización está bloqueada porque su estado es &apos;Aceptada&apos; o &apos;Vencida&apos;. No se permiten modificaciones en este estado. --></errorMessage>
+        <name>No_Editable_Estado_Aceptada_Vencida</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para crear una Cotización, el estado debe ser &apos;Nueva&apos;, y debe incluir obligatoriamente el Nombre de la Cotización y la Fecha de Caducidad. --></errorMessage>
+        <name>Nuevo_Registro_Campos_Obligatorios</name>
+    </validationRules>
+</CustomObjectTranslation>

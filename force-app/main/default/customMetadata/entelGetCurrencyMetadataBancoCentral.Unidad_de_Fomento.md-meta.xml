@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Unidad de Fomento</label>
+    <protected>false</protected>
+    <values>
+        <field>CurrencyIsoCode__c</field>
+        <value xsi:type="xsd:string">CLF</value>
+    </values>
+    <values>
+        <field>clientId__c</field>
+        <value xsi:type="xsd:string">3MVG9qfL8b2cTQHIJ1R7l2TlKHzfs0mhpHZXpTzlm7mSZ0Twz6vnfQ772FRYd6hfOsw9ra_.NW3vcEVqxS99r</value>
+    </values>
+    <values>
+        <field>clientSecret__c</field>
+        <value xsi:type="xsd:string">42595CF594B3ED642E837AE427B8EBAEBFC2FF86BD1F66A327EF7005C7434810</value>
+    </values>
+    <values>
+        <field>endPoint__c</field>
+        <value xsi:type="xsd:string">https://si3.bcentral.cl/SieteRestWS/SieteRestWS.ashx?</value>
+    </values>
+    <values>
+        <field>password__c</field>
+        <value xsi:type="xsd:string">Entel-soporte-1</value>
+    </values>
+    <values>
+        <field>serie__c</field>
+        <value xsi:type="xsd:string">F073.TCO.PRE.Z.D</value>
+    </values>
+    <values>
+        <field>user__c</field>
+        <value xsi:type="xsd:string">bdillems@entel.cl</value>
+    </values>
+</CustomMetadata>

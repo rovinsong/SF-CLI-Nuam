@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- Inside Sales --></label>
+        <name>Inside_Sales</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Sales Leader --></label>
+        <name>Sales_Leader</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Sales Operations --></label>
+        <name>Sales_Operations</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Success Manager --></label>
+        <name>Success_Manager</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- nuam --></label>
+        <name>nuam</name>
+    </customApplications>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Cotizaci_n_Asignar_Impuesto_por_Pa_s</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Cotizaciones_Sincronizar_Oportunidad_y_Estado_Quote</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Cuenta_Generar_Llave_Unica_Cuenta</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>ED_SCH_getCurrencyNowBancoCentral</fullName>
+    </flowDefinitions>
+    <quickActions>
+        <label><!-- Follow Up --></label>
+        <name>Follow_Up</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewTask --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Accounts with Activities --></description>
+        <label><!-- Accounts with Activities --></label>
+        <name>Accounts_with_Activities</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Contacts with Daily Engagements --></description>
+        <label><!-- Accounts with Contacts with Daily Engagements --></label>
+        <name>Accounts_with_Contacts_with_Daily_Engagements</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Contact Daily Metrics --></label>
+            <name>Contact Daily Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cadences &amp; Steps --></description>
+        <label><!-- Cadences &amp; Steps --></label>
+        <name>Cadences_amp_Steps</name>
+        <sections>
+            <label><!-- Cadence Steps --></label>
+            <name>Cadence Steps</name>
+        </sections>
+        <sections>
+            <label><!-- Cadences --></label>
+            <name>Cadences</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Call Script Monthly Engagement --></description>
+        <label><!-- Call Script Monthly Engagement --></label>
+        <name>Call_Script_Monthly_Engagement</name>
+        <sections>
+            <label><!-- Call Script Monthly Metrics --></label>
+            <name>Call Script Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Call Scripts --></label>
+            <name>Call Scripts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Call Script Engagement Report --></description>
+        <label><!-- Call Script Engagement Report --></label>
+        <name>Call_Template</name>
+        <sections>
+            <label><!-- Call Scripts --></label>
+            <name>Call Scripts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts and Cadence Trackers --></description>
+        <label><!-- Contacts and Cadence Trackers --></label>
+        <name>Contacts_and_Sales_Cadence_Trackers</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts with Daily Engagements --></description>
+        <label><!-- Contacts with Daily Engagements --></label>
+        <name>Contacts_with_Daily_Engagements</name>
+        <sections>
+            <label><!-- Contact Daily Metrics --></label>
+            <name>Contact Daily Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts with Monthly Engagements --></description>
+        <label><!-- Contacts with Monthly Engagements --></label>
+        <name>Contacts_with_Monthly_Engagements</name>
+        <sections>
+            <label><!-- Contact Monthly Metrics --></label>
+            <name>Contact Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Email Template Engagement Report --></description>
+        <label><!-- Email Template Engagement Report --></label>
+        <name>Email_Template</name>
+        <sections>
+            <label><!-- Email Templates --></label>
+            <name>Email Templates</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Email Template Monthly Engagement --></description>
+        <label><!-- Email Template Monthly Engagement --></label>
+        <name>Email_Template_Monthly_Engagement</name>
+        <sections>
+            <label><!-- Email Template Monthly Metrics --></label>
+            <name>Email Template Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Email Templates --></label>
+            <name>Email Templates</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Forecasting Items with Historical Trending --></description>
+        <label><!-- Forecasting Items with Historical Trending --></label>
+        <name>Forecasting_Items_with_Historical_Trending</name>
+        <sections>
+            <label><!-- Forecasting Item (Historical) --></label>
+            <name>Forecasting Item (Historical)</name>
+        </sections>
+        <sections>
+            <label><!-- Forecasting Items --></label>
+            <name>Forecasting Items</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads With or Without Cadence Trackers --></description>
+        <label><!-- Leads With or Without Cadence Trackers --></label>
+        <name>Leads_With_or_Without_Sales_Cadence_Trackers</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads and Cadence Trackers --></description>
+        <label><!-- Leads and Cadence Trackers --></label>
+        <name>Leads_and_Sales_Cadence_Trackers</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads with Daily Engagements --></description>
+        <label><!-- Leads with Daily Engagements --></label>
+        <name>Leads_with_Daily_Engagements</name>
+        <sections>
+            <label><!-- Lead Daily Metrics --></label>
+            <name>Lead Daily Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads with Monthly Engagements --></description>
+        <label><!-- Leads with Monthly Engagements --></label>
+        <name>Leads_with_Monthly_Engagements</name>
+        <sections>
+            <label><!-- Lead Monthly Metrics --></label>
+            <name>Lead Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Activities --></description>
+        <label><!-- Opportunities with Activities --></label>
+        <name>Opportunities_with_Activities</name>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Oportunidades --></label>
+            <name>Oportunidades</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Historical Trending --></description>
+        <label><!-- Opportunities with Historical Trending --></label>
+        <name>Opportunities_with_Historical_Trending</name>
+        <sections>
+            <label><!-- Oportunidades --></label>
+            <name>Oportunidades</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunity (Historical) --></label>
+            <name>Opportunity (Historical)</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opptys --></description>
+        <label><!-- Opptys --></label>
+        <name>Opptys</name>
+        <sections>
+            <label><!-- Oportunidades --></label>
+            <name>Oportunidades</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cadences &amp; Steps with Monthly Metrics --></description>
+        <label><!-- Cadences &amp; Steps with Monthly Metrics --></label>
+        <name>Sales_Cadences_Steps_with_Monthly_Metrics</name>
+        <sections>
+            <label><!-- Cadence Step Monthly Metrics --></label>
+            <name>Cadence Step Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Cadence Steps --></label>
+            <name>Cadence Steps</name>
+        </sections>
+        <sections>
+            <label><!-- Cadences --></label>
+            <name>Cadences</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cadences &amp; Trackers --></description>
+        <label><!-- Cadences &amp; Trackers --></label>
+        <name>Sales_Cadences_amp_Trackers</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Cadences --></label>
+            <name>Cadences</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cadences and Trackers (Inner join) --></description>
+        <label><!-- Cadences and Trackers (Inner join) --></label>
+        <name>Sales_Cadences_and_Trackers_Inner_join</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Cadences --></label>
+            <name>Cadences</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- User Activities --></description>
+        <label><!-- User Activities --></label>
+        <name>User_Activities</name>
+        <sections>
+            <label><!-- Activities (Assigned To) --></label>
+            <name>Activities (Assigned To)</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Users with Daily Metrics --></description>
+        <label><!-- Users with Daily Metrics --></label>
+        <name>Users_with_Daily_Metrics</name>
+        <sections>
+            <label><!-- User Daily Metrics --></label>
+            <name>User Daily Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Users with Monthly Engagements --></description>
+        <label><!-- Users with Monthly Engagements --></label>
+        <name>Users_with_Monthly_Engagements</name>
+        <sections>
+            <label><!-- User Monthly Metrics --></label>
+            <name>User Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Run Logs Spring &apos;24 --></description>
+        <label><!-- Orchestration Run Logs Spring &apos;24 --></label>
+        <name>flow_orchestration_log_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Run Log --></label>
+            <name>Orchestration Run Log</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Runs --></label>
+            <name>Orchestration Runs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Stage Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Stage Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_stage_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Stage Runs --></label>
+            <name>Orchestration Stage Runs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Step Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Step Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_step_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Step Runs --></label>
+            <name>Orchestration Step Runs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Work Items Spring &apos;24 --></description>
+        <label><!-- Orchestration Work Items Spring &apos;24 --></label>
+        <name>flow_orchestration_work_item_ootb_crt_two_four_eight</name>
+        <sections>
+            <columns>
+                <label><!-- Orchestration Step Run: Label --></label>
+                <name>Orchestration Step Run: Label</name>
+            </columns>
+            <columns>
+                <label><!-- Orchestration Step Run: Name --></label>
+                <name>Orchestration Step Run: Name</name>
+            </columns>
+            <columns>
+                <label><!-- Orchestration Step Run: Status --></label>
+                <name>Orchestration Step Run: Status</name>
+            </columns>
+            <label><!-- Orchestration Step Runs --></label>
+            <name>Orchestration Step Runs</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Assigned Group or Queue --></label>
+                <name>Assigned Group or Queue</name>
+            </columns>
+            <columns>
+                <label><!-- Assigned User --></label>
+                <name>Assigned User</name>
+            </columns>
+            <label><!-- Orchestration Work Items --></label>
+            <name>Orchestration Work Items</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Screen Flows --></description>
+        <label><!-- Screen Flows --></label>
+        <name>screen_flows_prebuilt_crt</name>
+        <sections>
+            <label><!-- Flow Interview Log Entries --></label>
+            <name>Flow Interview Log Entries</name>
+        </sections>
+        <sections>
+            <label><!-- Flow Interview Logs --></label>
+            <name>Flow Interview Logs</name>
+        </sections>
+    </reportTypes>
+</Translations>

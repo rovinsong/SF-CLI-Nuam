@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cotizacion_Validar_Precio_Total</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISCHANGED(Status),
+    TEXT(PRIORVALUE(Status)) = &quot;Nueva&quot;,
+    OR(
+        ISNULL(TotalPrice),
+        TotalPrice &lt;= 0
+    )
+)</errorConditionFormula>
+    <errorMessage>Para cambiar el estado de la cotización, Debe agregar un Producto</errorMessage>
+</ValidationRule>

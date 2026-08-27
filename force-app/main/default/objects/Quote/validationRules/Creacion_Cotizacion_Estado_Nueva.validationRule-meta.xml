@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Creacion_Cotizacion_Estado_Nueva</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+    AND(
+        ISNEW(),
+        NOT(ISPICKVAL(Status, &quot;Nueva&quot;))
+    )
+)</errorConditionFormula>
+    <errorMessage>Para crear una Cotización, el estado debe ser &apos;Nueva&apos;.</errorMessage>
+</ValidationRule>

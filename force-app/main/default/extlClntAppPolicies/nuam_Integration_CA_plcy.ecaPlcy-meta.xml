@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtlClntAppConfigurablePolicies xmlns="http://soap.sforce.com/2006/04/metadata">
+    <externalClientApplication>nuam_Integration_CA</externalClientApplication>
+    <isEnabled>true</isEnabled>
+    <isOauthPluginEnabled>true</isOauthPluginEnabled>
+    <label>nuam_Integration_CA_plcy</label>
+    <startPage>None</startPage>
+</ExtlClntAppConfigurablePolicies>

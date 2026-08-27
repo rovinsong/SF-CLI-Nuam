@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtlClntAppOauthSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <commaSeparatedOauthScopes>Full</commaSeparatedOauthScopes>
+    <externalClientApplication>nuam_Integration_CA</externalClientApplication>
+    <isFirstPartyAppEnabled>false</isFirstPartyAppEnabled>
+    <label>nuam_Integration_CA_oauth</label>
+    <oauthLink>00Ddi000004xlyH:888di0000007utV</oauthLink>
+</ExtlClntAppOauthSettings>

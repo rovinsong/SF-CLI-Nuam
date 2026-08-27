@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Subcategoría --></label>
+    <name>Subcategoria__c</name>
+    <picklistValues>
+        <masterLabel>Atención recibida por el personal​</masterLabel>
+        <translation><!-- Atención recibida por el personal​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calidad del servicio​</masterLabel>
+        <translation><!-- Calidad del servicio​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compensaciones o devoluciones​</masterLabel>
+        <translation><!-- Compensaciones o devoluciones​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Condiciones contractuales​</masterLabel>
+        <translation><!-- Condiciones contractuales​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demora en la atención​</masterLabel>
+        <translation><!-- Demora en la atención​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error en producto o servicio​</masterLabel>
+        <translation><!-- Error en producto o servicio​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Errores en sistemas o plataformas​</masterLabel>
+        <translation><!-- Errores en sistemas o plataformas​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estado de solicitud o servicio​</masterLabel>
+        <translation><!-- Estado de solicitud o servicio​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Facturación o cobros incorrectos​</masterLabel>
+        <translation><!-- Facturación o cobros incorrectos​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fallas técnicas o interrupciones​</masterLabel>
+        <translation><!-- Fallas técnicas o interrupciones​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Horarios o puntos de atención​</masterLabel>
+        <translation><!-- Horarios o puntos de atención​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Información comercial o precios​</masterLabel>
+        <translation><!-- Información comercial o precios​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Métodos de pago o facturación​</masterLabel>
+        <translation><!-- Métodos de pago o facturación​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problemas con instalación o configuración​</masterLabel>
+        <translation><!-- Problemas con instalación o configuración​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problemas de acceso o credenciales​</masterLabel>
+        <translation><!-- Problemas de acceso o credenciales​ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pérdida o inconsistencia de datos​</masterLabel>
+        <translation><!-- Pérdida o inconsistencia de datos​ --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nuevo_Registro_Campos_Obligatorios</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISNEW(),
+    OR(
+        TEXT(Status) &lt;&gt; &quot;Nueva&quot;,
+        ISBLANK(ExpirationDate),
+        ISBLANK(Name)
+    )
+)</errorConditionFormula>
+    <errorMessage>Para crear una Cotización, el estado debe ser &apos;Nueva&apos;, y debe incluir obligatoriamente el Nombre de la Cotización y la Fecha de Caducidad.</errorMessage>
+</ValidationRule>

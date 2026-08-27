@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotivoDeDescarte__c</fullName>
+    <label>Motivo de Descarte</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No cumple requisitos</fullName>
+                <default>false</default>
+                <label>No cumple requisitos</label>
+            </value>
+            <value>
+                <fullName>No interesado</fullName>
+                <default>false</default>
+                <label>No interesado</label>
+            </value>
+            <value>
+                <fullName>Otro</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Otro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

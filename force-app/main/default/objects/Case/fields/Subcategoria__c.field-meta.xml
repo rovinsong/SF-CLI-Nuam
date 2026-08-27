@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subcategoria__c</fullName>
+    <label>Subcategoría</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Facturacion o cobros incorrectos​</fullName>
+                <default>false</default>
+                <label>Facturación o cobros incorrectos​</label>
+            </value>
+            <value>
+                <fullName>Calidad del servicio​</fullName>
+                <default>false</default>
+                <label>Calidad del servicio​</label>
+            </value>
+            <value>
+                <fullName>Demora en la atencion​</fullName>
+                <default>false</default>
+                <label>Demora en la atención​</label>
+            </value>
+            <value>
+                <fullName>Error en producto o servicio​</fullName>
+                <default>false</default>
+                <label>Error en producto o servicio​</label>
+            </value>
+            <value>
+                <fullName>Atención recibida por el personal​</fullName>
+                <default>false</default>
+                <label>Atención recibida por el personal​</label>
+            </value>
+            <value>
+                <fullName>Compensaciones o devoluciones​</fullName>
+                <default>false</default>
+                <label>Compensaciones o devoluciones​</label>
+            </value>
+            <value>
+                <fullName>Informacion comercial o precios​</fullName>
+                <default>false</default>
+                <label>Información comercial o precios​</label>
+            </value>
+            <value>
+                <fullName>Estado de solicitud o servicio​</fullName>
+                <default>false</default>
+                <label>Estado de solicitud o servicio​</label>
+            </value>
+            <value>
+                <fullName>Condiciones contractuales​</fullName>
+                <default>false</default>
+                <label>Condiciones contractuales​</label>
+            </value>
+            <value>
+                <fullName>Metodos de pago o facturacion​</fullName>
+                <default>false</default>
+                <label>Métodos de pago o facturación​</label>
+            </value>
+            <value>
+                <fullName>Horarios o puntos de atencion​</fullName>
+                <default>false</default>
+                <label>Horarios o puntos de atención​</label>
+            </value>
+            <value>
+                <fullName>Fallas técnicas o interrupciones​</fullName>
+                <default>false</default>
+                <label>Fallas técnicas o interrupciones​</label>
+            </value>
+            <value>
+                <fullName>Problemas de acceso o credenciales​</fullName>
+                <default>false</default>
+                <label>Problemas de acceso o credenciales​</label>
+            </value>
+            <value>
+                <fullName>Errores en sistemas o plataformas​</fullName>
+                <default>false</default>
+                <label>Errores en sistemas o plataformas​</label>
+            </value>
+            <value>
+                <fullName>Problemas con instalacion o configuracion​</fullName>
+                <default>false</default>
+                <label>Problemas con instalación o configuración​</label>
+            </value>
+            <value>
+                <fullName>Perdida o inconsistencia de datos​</fullName>
+                <default>false</default>
+                <label>Pérdida o inconsistencia de datos​</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

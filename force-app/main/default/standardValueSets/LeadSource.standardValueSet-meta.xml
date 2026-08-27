@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referido</fullName>
+        <default>false</default>
+        <label>Referido</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Evento</fullName>
+        <default>false</default>
+        <label>Evento</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Llamada</fullName>
+        <default>false</default>
+        <label>Llamada</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Correo</fullName>
+        <default>false</default>
+        <label>Correo</label>
+    </standardValue>
+</StandardValueSet>

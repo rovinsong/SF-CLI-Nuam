@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campos_Oligatorios_Estado_Nueva</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(StageName, &quot;Calificar&quot;),
+    OR(
+        ISBLANK(Amount),
+        ISBLANK(CloseDate),
+        ISBLANK(AccountId),
+        ISBLANK(Name)
+    )
+)</errorConditionFormula>
+    <errorMessage>Los campos Importe, Cuenta, Fecha Estimada de Cierre y Nombre deben ser distinto de vacío.</errorMessage>
+</ValidationRule>

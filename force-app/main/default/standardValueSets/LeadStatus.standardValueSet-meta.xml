@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>No contactado</fullName>
+        <default>true</default>
+        <label>No contactado</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Descartado</fullName>
+        <default>false</default>
+        <label>Descartado</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Calificado</fullName>
+        <default>false</default>
+        <label>Calificado</label>
+        <converted>true</converted>
+    </standardValue>
+</StandardValueSet>

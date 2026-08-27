@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Objeto que contiene registros necesarios - que deben ser mantenidos - para la correcta ejecución de la integración de monedas con el Banco Central</description>
+    <label>entelGetCurrencyMetadataBancoCentral</label>
+    <pluralLabel>entelGetCurrencyMetadataBancoCentrales</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

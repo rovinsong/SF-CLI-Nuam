@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campos_No_Editables_Etapa_Cerrada</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+ISPICKVAL(PRIORVALUE(StageName), &quot;Closed Lost&quot;),
+ISPICKVAL(PRIORVALUE(StageName), &quot;Closed Won&quot;))</errorConditionFormula>
+    <errorMessage>Esta oportunidad ya ha sido cerrada (Ganada o Perdida) y no permite modificaciones.</errorMessage>
+</ValidationRule>

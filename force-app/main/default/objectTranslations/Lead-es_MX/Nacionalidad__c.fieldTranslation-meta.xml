@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Nacionalidad --></label>
+    <name>Nacionalidad__c</name>
+    <picklistValues>
+        <masterLabel>Chilena</masterLabel>
+        <translation><!-- Chilena --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colombia</masterLabel>
+        <translation><!-- Colombia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otra</masterLabel>
+        <translation><!-- Otra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peruana</masterLabel>
+        <translation><!-- Peruana --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

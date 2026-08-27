@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cambio_Estado_desde_Etapa_Definir</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(PRIORVALUE(StageName), &quot;Needs Analysis&quot;),
+ISCHANGED(StageName),
+NOT(ISPICKVAL(StageName, &quot;Proposal&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Desde la etapa &apos;Definir&apos; solo puedes avanzar a la etapa &apos;Proponer&apos;.</errorMessage>
+</ValidationRule>

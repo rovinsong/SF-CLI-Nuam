@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Candidato</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Candidatos</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <validationRules>
+        <errorMessage><!-- El registro se encuentra en un estado final (Calificado/Descartado) y no puede ser modificado. Contacte con su administrador si requiere realizar un cambio. --></errorMessage>
+        <name>Bloqueo_Campos_Estado_Calificado_Descart</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para calificar un candidato, es obligatorio completar el Nombre, Correo electrónico y Teléfono móvil. --></errorMessage>
+        <name>Campos_Obligatorios_Estado_Calificado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cuando el estado es &apos;Descartado&apos;, los campos &apos;Motivo de Descarte&apos; es obligatorio. --></errorMessage>
+        <name>Campos_Obligatorios_Estado_Descartado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cuando el estado es &apos;No contactado&apos;, los campos &apos;Estado del Candidato&apos; y &apos;Origen del Candidato&apos; son obligatorios. --></errorMessage>
+        <name>Campos_Obligatorios_Estado_No_Contactado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Error de creación: Los nuevos registros deben iniciarse obligatoriamente con el estado No contactado. --></errorMessage>
+        <name>Validar_Estado_Creacion_No_Contactado</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

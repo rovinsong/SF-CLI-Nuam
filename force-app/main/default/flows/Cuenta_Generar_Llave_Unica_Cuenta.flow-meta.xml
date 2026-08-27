@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Asignar_Llave_Unica</name>
+        <label>Asignar Llave Unica</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LlaveUnicaDuplicadoPais__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>LlaveUnica</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <environments>Default</environments>
+    <formulas>
+        <name>LlaveUnica</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  OR(
+    AND(TEXT({!$Record.PaisDeOperacion__c}) = &quot;Chile&quot;, TEXT({!$Record.IdFacturacion__c}) = &quot;RUT&quot;),
+    AND(TEXT({!$Record.PaisDeOperacion__c}) = &quot;Peru&quot;, TEXT({!$Record.IdFacturacion__c}) = &quot;RUC&quot;),
+    AND(TEXT({!$Record.PaisDeOperacion__c}) = &quot;Colombia&quot;, TEXT({!$Record.IdFacturacion__c}) = &quot;NIT&quot;)
+  ),
+  TEXT({!$Record.PaisDeOperacion__c}) &amp; TEXT({!$Record.IdFacturacion__c}) &amp; {!$Record.IdDeIdentificacion__c},
+  null
+)</expression>
+    </formulas>
+    <interviewLabel>Cuenta: Generar Llave Unica Cuenta {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Cuenta: Generar Llave Unica Cuenta</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Asignar_Llave_Unica</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

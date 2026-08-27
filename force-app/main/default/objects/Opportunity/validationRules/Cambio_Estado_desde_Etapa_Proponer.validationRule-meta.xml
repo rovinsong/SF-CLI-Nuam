@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cambio_Estado_desde_Etapa_Proponer</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(PRIORVALUE(StageName), &quot;Proposal&quot;),
+ISCHANGED(StageName),
+NOT(ISPICKVAL(StageName, &quot;Negotiation&quot;)),
+NOT(ISPICKVAL(StageName, &quot;Closed Won&quot;)),
+NOT(ISPICKVAL(StageName, &quot;Closed Lost&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Desde la etapa &apos;Proponer&apos; solo puedes avanzar a la etapa de &apos;Negociación&apos; o &quot;Cerrada / Perdida&quot; o &quot;Cerrada / Ganada&quot;</errorMessage>
+</ValidationRule>

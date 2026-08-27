@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Default</masterLabel>
+    <pathAssistantSteps>
+        <picklistValueName>Calificado</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>MotivoDeDescarte__c</fieldNames>
+        <picklistValueName>Descartado</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>No contactado</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

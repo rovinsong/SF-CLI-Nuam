@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Motivo de Descarte --></label>
+    <name>MotivoDeDescarte__c</name>
+    <picklistValues>
+        <masterLabel>No cumple requisitos</masterLabel>
+        <translation><!-- No cumple requisitos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No interesado</masterLabel>
+        <translation><!-- No interesado --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

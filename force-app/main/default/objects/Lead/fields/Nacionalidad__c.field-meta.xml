@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nacionalidad__c</fullName>
+    <label>Nacionalidad</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chilena</fullName>
+                <default>false</default>
+                <label>Chilena</label>
+            </value>
+            <value>
+                <fullName>Colombia</fullName>
+                <default>false</default>
+                <label>Colombia</label>
+            </value>
+            <value>
+                <fullName>Peruana</fullName>
+                <default>false</default>
+                <label>Peruana</label>
+            </value>
+            <value>
+                <fullName>Otra</fullName>
+                <default>false</default>
+                <label>Otra</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

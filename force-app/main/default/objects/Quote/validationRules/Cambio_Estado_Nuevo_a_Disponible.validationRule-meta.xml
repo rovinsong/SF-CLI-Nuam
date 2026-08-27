@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cambio_Estado_Nuevo_a_Disponible</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISCHANGED(Status),
+    TEXT(PRIORVALUE(Status)) = &quot;Nueva&quot;,
+    TEXT(Status) &lt;&gt; &quot;CotizacionDisponible&quot;
+)</errorConditionFormula>
+    <errorMessage>Una Cotización en estado &apos;Nueva&apos; únicamente puede pasar al estado &apos;Cotización Disponible&apos; y debe tener al menos un producto relacionado.</errorMessage>
+</ValidationRule>

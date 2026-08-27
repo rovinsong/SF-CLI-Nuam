@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Calificar</masterLabel>
+        <translation>Calificar</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed Lost</masterLabel>
+        <translation>Cerrada / Perdida</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed Won</masterLabel>
+        <translation>Cerrada / Ganada</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Needs Analysis</masterLabel>
+        <translation>Definir</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Negotiation</masterLabel>
+        <translation>Negociación</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Proposal</masterLabel>
+        <translation>Proponer</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UN Emisiones y Operaciones Especiales</fullName>
+        <default>false</default>
+        <label>UN Emisiones y Operaciones Especiales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UN Negociacion</fullName>
+        <default>false</default>
+        <label>UN Negociación</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UN Informacion</fullName>
+        <default>false</default>
+        <label>UN Información</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UN Infraestructura</fullName>
+        <default>false</default>
+        <label>UN Infraestructura</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UN Deposito</fullName>
+        <default>false</default>
+        <label>UN Depósito</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Educacion</fullName>
+        <default>false</default>
+        <label>Educación</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UN Emisores</fullName>
+        <default>false</default>
+        <label>UN Emisores</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UN Emprendimiento</fullName>
+        <default>false</default>
+        <label>UN Emprendimiento</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UN Mercados Alternativos</fullName>
+        <default>false</default>
+        <label>UN Mercados Alternativos</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UN Camara</fullName>
+        <default>false</default>
+        <label>UN Cámara</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Otros</fullName>
+        <default>false</default>
+        <label>Otros</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campo_Obligatorio_CerradaPerdida</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(StageName, &quot;Closed Lost&quot;),
+    ISBLANK(TEXT(MotivoDePerdida__c))
+)</errorConditionFormula>
+    <errorDisplayField>MotivoDePerdida__c</errorDisplayField>
+    <errorMessage>Es obligatorio indicar el Motivo de Pérdida cuando la oportunidad se cierra como Perdida.</errorMessage>
+</ValidationRule>

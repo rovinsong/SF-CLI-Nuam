@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Asignar_Tax</name>
+        <label>Asignar Tax</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Tax</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fm_CalculoMontoImpuesto</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <environments>Default</environments>
+    <formulas>
+        <name>fm_CalculoMontoImpuesto</name>
+        <dataType>Number</dataType>
+        <expression>{!$Record.Subtotal} * {!fm_PorcentajeSegunPais}</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>fm_PorcentajeSegunPais</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!$Record.Opportunity.Account.PaisDeOperacion__c},
+  &quot;Chile&quot;, 0.19,
+  &quot;Colombia&quot;, 0.19,
+  &quot;Peru&quot;, 0.18,
+  0
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Cotización {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Cotización Asignar Impuesto por País</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Asignar_Tax</targetReference>
+        </connector>
+        <object>Quote</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

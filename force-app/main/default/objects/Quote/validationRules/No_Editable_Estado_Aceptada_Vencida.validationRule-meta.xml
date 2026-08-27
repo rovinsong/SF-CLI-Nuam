@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Editable_Estado_Aceptada_Vencida</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(ISNEW()),
+    OR(
+        TEXT(PRIORVALUE(Status)) = &quot;Aceptada&quot;,
+        TEXT(PRIORVALUE(Status)) = &quot;Vencida&quot;
+    )
+)</errorConditionFormula>
+    <errorMessage>Esta cotización está bloqueada porque su estado es &apos;Aceptada&apos; o &apos;Vencida&apos;. No se permiten modificaciones en este estado.</errorMessage>
+</ValidationRule>

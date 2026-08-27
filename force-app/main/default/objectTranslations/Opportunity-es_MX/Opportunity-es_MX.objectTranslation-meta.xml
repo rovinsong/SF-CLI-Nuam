@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage><!-- Desde la etapa &apos;Calificar&apos; solo puedes avanzar a la etapa &apos;Definir&apos;. --></errorMessage>
+        <name>Cambio_Estado_desde_Etapa_Calificar</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Desde la etapa &apos;Definir&apos; solo puedes avanzar a la etapa &apos;Proponer&apos;. --></errorMessage>
+        <name>Cambio_Estado_desde_Etapa_Definir</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Desde la etapa &apos;Proponer&apos; solo puedes avanzar a la etapa de &apos;Negociación&apos; o &quot;Cerrada / Perdida&quot; o &quot;Cerrada / Ganada&quot; --></errorMessage>
+        <name>Cambio_Estado_desde_Etapa_Proponer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Desde la etapa de Negociación, la oportunidad solo puede pasar a un estado de cierre (Ganada o Perdida) --></errorMessage>
+        <name>Cambio_Estado_desde_Negociacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Es obligatorio indicar el Motivo de Pérdida cuando la oportunidad se cierra como Perdida. --></errorMessage>
+        <name>Campo_Obligatorio_CerradaPerdida</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Esta oportunidad ya ha sido cerrada (Ganada o Perdida) y no permite modificaciones. --></errorMessage>
+        <name>Campos_No_Editables_Etapa_Cerrada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Los campos Importe, Cuenta, Fecha Estimada de Cierre y Nombre deben ser distinto de vacío. --></errorMessage>
+        <name>Campos_Oligatorios_Estado_Nueva</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Antes de cerrar la Oportunidad, debe tener una cotización aceptada y sincronizada. --></errorMessage>
+        <name>Cotizacion_Sincronizada_CerradaGanada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Todas las oportunidades deben iniciarse en la etapa Calificar. --></errorMessage>
+        <name>Creacion_Estado_Inicial</name>
+    </validationRules>
+</CustomObjectTranslation>

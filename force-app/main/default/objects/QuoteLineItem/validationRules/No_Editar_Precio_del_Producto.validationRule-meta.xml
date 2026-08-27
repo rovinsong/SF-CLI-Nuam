@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Editar_Precio_del_Producto</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(UnitPrice)</errorConditionFormula>
+    <errorDisplayField>UnitPrice</errorDisplayField>
+    <errorMessage>El precio del producto no puede editarse.</errorMessage>
+</ValidationRule>
