@@ -34,5 +34,15 @@
         <members>ED_Nuam_Onboarding_Integracion</members>
         <name>PermissionSet</name>
     </types>
+    <types>
+        <members>LeadSource</members>
+        <name>StandardValueSet</name>
+    </types>
+    <!--
+      ConnectedApp NUAM_Onboarding_Integracion: la org NUAM bloquea la creación de
+      Connected Apps vía Metadata API ("No puede crear una aplicación conectada...").
+      Se crea manualmente en la UI (ver Doc/REQ-001/connected-app-setup.md).
+      El XML queda versionado en force-app pero excluido de este deploy.
+    -->
     <version>62.0</version>
 </Package>

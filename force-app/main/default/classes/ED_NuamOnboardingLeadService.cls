@@ -8,10 +8,10 @@ public with sharing class ED_NuamOnboardingLeadService {
 
     // Origen del Candidato (LeadSource) para Leads creados por la integración.
     // La org exige LeadSource no vacío en estado 'No contactado' (validation rule
-    // Campos_Obligatorios_Estado_No_Contactado). 'Web' es el valor del picklist
-    // que representa el onboarding digital. CONFIRMAR con Nuam si prefieren otro.
+    // Campos_Obligatorios_Estado_No_Contactado). Valor dedicado 'Onboarding'
+    // agregado al StandardValueSet para identificar el origen digital de Nuam.
     @TestVisible
-    private static final String DEFAULT_LEAD_SOURCE = 'Web';
+    private static final String DEFAULT_LEAD_SOURCE = 'Onboarding';
 
     /**
      * Procesa el request: valida obligatorios, mapea y hace upsert del Lead.
