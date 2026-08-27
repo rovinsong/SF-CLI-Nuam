@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ED_Fact_Pais__c</fullName>
+    <label>País (Facturación)</label>
+    <type>Text</type>
+    <length>80</length>
+    <description>País del contacto de facturación (bloque Facturación).</description>
+    <inlineHelpText>País asociado a la facturación.</inlineHelpText>
+    <required>false</required>
+</CustomField>

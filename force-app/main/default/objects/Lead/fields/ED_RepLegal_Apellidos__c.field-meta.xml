@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ED_RepLegal_Apellidos__c</fullName>
+    <label>Apellidos (Rep. Legal)</label>
+    <type>Text</type>
+    <length>80</length>
+    <description>Apellidos del representante legal (bloque Representante legal).</description>
+    <inlineHelpText>Apellidos del representante legal de la empresa.</inlineHelpText>
+    <required>false</required>
+</CustomField>

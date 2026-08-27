@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ED_RUT_Empresa__c</fullName>
+    <label>RUT Empresa</label>
+    <type>Text</type>
+    <length>12</length>
+    <description>RUT de la empresa recibido en el bloque Empresa del Onboarding. Informativo.</description>
+    <inlineHelpText>RUT de la empresa (formato 99999999-9).</inlineHelpText>
+    <required>false</required>
+</CustomField>

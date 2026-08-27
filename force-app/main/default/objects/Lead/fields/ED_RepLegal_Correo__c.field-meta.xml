@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ED_RepLegal_Correo__c</fullName>
+    <label>Correo (Rep. Legal)</label>
+    <type>Email</type>
+    <description>Correo electrónico del representante legal (bloque Representante legal).</description>
+    <inlineHelpText>Correo electrónico del representante legal.</inlineHelpText>
+    <required>false</required>
+</CustomField>

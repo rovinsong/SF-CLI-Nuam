@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  REQ-001 - Servicio REST inbound Onboarding Nuam -> Lead
+  Orden de dependencias: campos custom (Lead) -> clases Apex -> Permission Set.
+  API names ED_* provisionales, pendientes de confirmar con Nuam.
+-->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Lead.ED_Onboarding_Id__c</members>
+        <members>Lead.ED_RUT_Empresa__c</members>
+        <members>Lead.ED_Comuna__c</members>
+        <members>Lead.ED_Admin_Area_Cargo__c</members>
+        <members>Lead.ED_RepLegal_Nombres__c</members>
+        <members>Lead.ED_RepLegal_Apellidos__c</members>
+        <members>Lead.ED_RepLegal_Cargo__c</members>
+        <members>Lead.ED_RepLegal_Correo__c</members>
+        <members>Lead.ED_Fact_Nombres__c</members>
+        <members>Lead.ED_Fact_Apellidos__c</members>
+        <members>Lead.ED_Fact_Telefono__c</members>
+        <members>Lead.ED_Fact_Cargo__c</members>
+        <members>Lead.ED_Fact_Area_Cargo__c</members>
+        <members>Lead.ED_Fact_Pais__c</members>
+        <members>Lead.ED_Fact_Correo__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>ED_NuamOnboardingLeadDTO</members>
+        <members>ED_NuamOnboardingLeadService</members>
+        <members>ED_NuamOnboardingLeadRest</members>
+        <members>ED_NuamOnboardingLeadRestTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>ED_Nuam_Onboarding_Integracion</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>62.0</version>
+</Package>

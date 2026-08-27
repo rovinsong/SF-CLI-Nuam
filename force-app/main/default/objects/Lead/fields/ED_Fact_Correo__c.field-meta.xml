@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ED_Fact_Correo__c</fullName>
+    <label>Correo de Facturación</label>
+    <type>Email</type>
+    <description>Correo electrónico de facturación (bloque Facturación).</description>
+    <inlineHelpText>Correo electrónico donde se envía la facturación.</inlineHelpText>
+    <required>false</required>
+</CustomField>

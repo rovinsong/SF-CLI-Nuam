@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ED_Onboarding_Id__c</fullName>
+    <label>Onboarding Id (Nuam)</label>
+    <type>Text</type>
+    <length>100</length>
+    <externalId>true</externalId>
+    <unique>true</unique>
+    <description>Identificador único de la solicitud de Onboarding enviado por Nuam. Clave de deduplicación del upsert (External Id).</description>
+    <inlineHelpText>Id único que envía Nuam en el payload; se usa para crear o actualizar el Lead sin duplicar.</inlineHelpText>
+    <required>false</required>
+</CustomField>
