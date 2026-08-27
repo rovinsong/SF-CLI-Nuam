@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>NUAM Onboarding Apex (Integration)</label>
+    <description>Usuario de integración (licencia Salesforce Integration): solo ejecución de las clases Apex del servicio Onboarding. El CRUD/FLS de Lead lo aplica el Apex en system mode. REQ-001.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <classAccesses>
+        <apexClass>ED_NuamOnboardingLeadRest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ED_NuamOnboardingLeadService</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ED_NuamOnboardingLeadDTO</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+</PermissionSet>

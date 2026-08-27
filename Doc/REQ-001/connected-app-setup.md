@@ -21,14 +21,27 @@ Por eso la Connected App se crea **manualmente en la UI**. El XML de referencia 
    - Permitted Users: `Admin approved users are pre-authorized`.
    - **Client Credentials Flow → Run As**: seleccionar el **usuario de integración dedicado** (ver más abajo).
    - IP Relaxation: según política Entel (idealmente allowlist de IPs de Nuam).
-6. **Manage → Assign** el Permission Set `ED_Nuam_Onboarding_Integracion` al perfil/PS del usuario de integración (o asignar el PS directo al usuario).
+6. El usuario de integración ya tiene asignado el Permission Set **`ED_Nuam_Onboarding_Apex`** (solo acceso a las clases Apex). NO usar `ED_Nuam_Onboarding_Integracion` para este usuario: esa licencia no admite CRUD sobre Lead.
 7. Obtener **Consumer Key** y **Consumer Secret** (Manage Consumer Details). Entregarlos a Nuam por canal seguro. **Nunca** versionar en git.
 
-## Usuario de integración (Run As)
+## Usuario de integración (Run As) — YA CREADO en UAT
 
-- Crear un usuario dedicado (no una persona real), ej. `integracion.nuam@entel.cl.uat`.
-- Asignar Permission Set `ED_Nuam_Onboarding_Integracion` (Apex + CRUD Lead + FLS ED_*).
-- Licencia mínima que permita API + ejecución del endpoint.
+- Username: `integracion.nuam@entel.cl.uat.nuamint`
+- Licencia: **Salesforce Integration** · Perfil: `Minimum Access - API Only Integrations`
+- Permission Set: **`ED_Nuam_Onboarding_Apex`** (solo `classAccesses` a las 3 clases del servicio).
+
+### Por qué dos Permission Sets (decisión de arquitectura)
+
+La licencia **Salesforce Integration NO admite permisos CRUD sobre objetos estándar** (Lead).
+Al intentar asignar `ED_Nuam_Onboarding_Integracion` (que incluye Create/Edit Lead + FLS) falla con
+`La licencia de usuario no admite el permiso: Crear Lead`.
+
+Solución: el Apex se ejecuta en **system mode** (el CRUD/FLS del objeto lo resuelve la clase, no el
+usuario). Por eso el usuario de integración solo necesita **acceso a la clase Apex**, no CRUD directo.
+
+- `ED_Nuam_Onboarding_Apex` → usuario de integración (licencia Integration). Solo Apex.
+- `ED_Nuam_Onboarding_Integracion` → usuarios internos reales que necesiten ver/editar los campos
+  ED_* del Lead en la UI (CRUD Lead + FLS). NO para el usuario de integración.
 
 ## Flujo OAuth para Nuam (Client Credentials)
 
