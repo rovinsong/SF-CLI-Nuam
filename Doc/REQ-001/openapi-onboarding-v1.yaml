@@ -1,0 +1,114 @@
+openapi: 3.0.3
+info:
+  title: Nuam Onboarding a Lead - Servicio REST inbound
+  description: >
+    Servicio Apex REST de Salesforce (Entel) que crea o actualiza (upsert) un Lead
+    a partir del payload de Onboarding de Nuam. Contrato v1.
+  version: "1.0.0"
+servers:
+  - url: https://platform-drive-1165--uat.sandbox.my.salesforce.com
+    description: Sandbox UAT
+paths:
+  /services/apexrest/nuam/onboarding/v1/lead:
+    post:
+      summary: Crear o actualizar un Lead desde Onboarding (upsert por onboardingId)
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OnboardingRequest'
+      responses:
+        '201':
+          description: Lead creado
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/OnboardingResponse' }
+        '200':
+          description: Lead actualizado
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/OnboardingResponse' }
+        '400':
+          description: Payload invalido o JSON malformado
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/OnboardingResponse' }
+        '401':
+          description: No autenticado
+        '500':
+          description: Error no controlado
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: OAuth 2.0 Client Credentials. Token en Authorization Bearer.
+  schemas:
+    OnboardingRequest:
+      type: object
+      required: [onboardingId, empresa, usuarioAdministrador, representanteLegal, facturacion]
+      properties:
+        onboardingId: { type: string, example: "ONB-2026-000123" }
+        empresa: { $ref: '#/components/schemas/Empresa' }
+        usuarioAdministrador: { $ref: '#/components/schemas/UsuarioAdministrador' }
+        representanteLegal: { $ref: '#/components/schemas/RepresentanteLegal' }
+        facturacion: { $ref: '#/components/schemas/Facturacion' }
+    Empresa:
+      type: object
+      required: [razonSocial, rut, pais, comuna, direccion, rubroComercial]
+      properties:
+        razonSocial: { type: string }
+        rut: { type: string, example: "76123456-7" }
+        pais: { type: string }
+        comuna: { type: string }
+        direccion: { type: string }
+        rubroComercial: { type: string, description: "Se mapea a Industry (picklist). Confirmar catalogo." }
+    UsuarioAdministrador:
+      type: object
+      required: [nombre, apellido, correo]
+      properties:
+        nombre: { type: string }
+        apellido: { type: string }
+        telefono: { type: string }
+        correo: { type: string, format: email }
+        cargo: { type: string }
+        areaCargo: { type: string }
+    RepresentanteLegal:
+      type: object
+      required: [nombres, apellidos, cargo, correo]
+      properties:
+        nombres: { type: string }
+        apellidos: { type: string }
+        cargo: { type: string }
+        correo: { type: string, format: email }
+    Facturacion:
+      type: object
+      required: [nombres, apellidos, cargo, pais, correoFacturacion]
+      properties:
+        nombres: { type: string }
+        apellidos: { type: string }
+        telefono: { type: string }
+        cargo: { type: string }
+        areaCargo: { type: string }
+        pais: { type: string }
+        correoFacturacion: { type: string, format: email }
+    OnboardingResponse:
+      type: object
+      properties:
+        status: { type: string, enum: [created, updated, error] }
+        leadId: { type: string, nullable: true, example: "00Qdi00000QQnXZEA1" }
+        dedupKey: { type: string, nullable: true }
+        message: { type: string }
+        errors:
+          type: array
+          items: { $ref: '#/components/schemas/FieldError' }
+        timestamp: { type: string, format: date-time }
+    FieldError:
+      type: object
+      properties:
+        field: { type: string, example: "empresa.rut" }
+        code: { type: string, example: "REQUIRED" }
+        detail: { type: string }
