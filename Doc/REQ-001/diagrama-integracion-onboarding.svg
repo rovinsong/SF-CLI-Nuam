@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 1440 1000" role="img" aria-labelledby="title desc">
+<title id="title">Integración Onboarding Nuam y Salesforce</title>
+<desc id="desc">Implementación local Lead con OAuth y respuesta síncrona; propuesta Account y Contact sin implementar en panel separado.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#475569"/></marker><marker id="amber" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#b45309"/></marker></defs>
+<rect width="1440" height="1000" fill="#f8fafc"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="48" y="55" font-size="32" fill="#0f172a" font-weight="700"><tspan x="48" dy="0">Onboarding Nuam → Salesforce</tspan></text>
+<text x="48" y="86" font-size="17" fill="#334155" font-weight="400"><tspan x="48" dy="0">REQ-001 · Arquitectura de integración · 16 octubre 2026</tspan></text>
+<rect x="400" y="120" width="992" height="455" rx="20" fill="#eff6ff" stroke="#93c5fd"/>
+<text x="428" y="156" font-size="18" fill="#0369a1" font-weight="700"><tspan x="428" dy="0">SALESFORCE · IMPLEMENTADO EN LOCAL</tspan></text>
+<rect x="48" y="280" width="290" height="160" rx="12" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/><text x="68" y="312" font-size="20" fill="#0f172a" font-weight="650"><tspan x="68" dy="0">Nuam · Backend</tspan></text><text x="68" y="343" font-size="16" fill="#334155" font-weight="400"><tspan x="68" dy="0">Empresa y administrador</tspan><tspan x="68" dy="25">Representante legal</tspan><tspan x="68" dy="25">Facturación · onboardingId</tspan></text>
+<rect x="650" y="185" width="430" height="110" rx="12" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/><text x="670" y="217" font-size="20" fill="#0f172a" font-weight="650"><tspan x="670" dy="0">OAuth 2.0</tspan></text><text x="670" y="248" font-size="16" fill="#334155" font-weight="400"><tspan x="670" dy="0">Client Credentials · usuario de integración</tspan><tspan x="670" dy="25">Configuración y conexión por reconfirmar</tspan></text>
+<path d="M193 280 V221 H650" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="225" y="210" font-size="15" fill="#334155" font-weight="400"><tspan x="225" dy="0">1 · POST /services/oauth2/token</tspan></text>
+<path d="M650 270 H360 V315 H338" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="390" y="258" font-size="15" fill="#334155" font-weight="400"><tspan x="390" dy="0">2 · access_token</tspan></text>
+<rect x="430" y="350" width="275" height="120" rx="12" fill="#ffffff" stroke="#0284c7" stroke-width="2"/><text x="450" y="382" font-size="20" fill="#0f172a" font-weight="650"><tspan x="450" dy="0">Apex REST</tspan></text><text x="450" y="413" font-size="16" fill="#334155" font-weight="400"><tspan x="450" dy="0">ED_NuamOnboardingLeadRest</tspan><tspan x="450" dy="25">POST /v1/lead</tspan></text>
+<rect x="760" y="350" width="280" height="120" rx="12" fill="#ffffff" stroke="#0284c7" stroke-width="2"/><text x="780" y="382" font-size="20" fill="#0f172a" font-weight="650"><tspan x="780" dy="0">Service + DTO</tspan></text><text x="780" y="413" font-size="16" fill="#334155" font-weight="400"><tspan x="780" dy="0">Valida campos obligatorios</tspan><tspan x="780" dy="25">Mapea cuatro bloques</tspan></text>
+<rect x="1095" y="350" width="265" height="120" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/><text x="1115" y="382" font-size="20" fill="#0f172a" font-weight="650"><tspan x="1115" dy="0">Lead</tspan></text><text x="1115" y="413" font-size="16" fill="#334155" font-weight="400"><tspan x="1115" dy="0">15 campos ED_*</tspan><tspan x="1115" dy="25">LeadSource = Onboarding</tspan></text>
+<path d="M338 380 H430" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="350" y="344" font-size="14" fill="#334155" font-weight="400"><tspan x="350" dy="0">3 · JSON</tspan><tspan x="350" dy="25"> + Bearer</tspan></text>
+<path d="M705 410 H760" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M1040 410 H1095" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1060" y="319" font-size="14" fill="#334155" font-weight="400"><tspan x="1060" dy="0">4 · Upsert</tspan></text>
+<path d="M1230 470 V515 H193 V440" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="410" y="507" font-size="16" fill="#334155" font-weight="400"><tspan x="410" dy="0">5 · Respuesta síncrona: 201 / 200 / 400 / 500 + status, leadId y errors[]</tspan></text>
+<text x="428" y="552" font-size="16" fill="#0369a1" font-weight="400"><tspan x="428" dy="0">Clave de deduplicación: Lead.ED_Onboarding_Id__c · External Id único</tspan></text>
+<rect x="48" y="620" width="1344" height="285" rx="20" fill="#fffbeb" stroke="#d97706" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="76" y="658" font-size="19" fill="#92400e" font-weight="700"><tspan x="76" dy="0">EVOLUCIÓN PROPUESTA · PENDIENTE DE IMPLEMENTAR / NO DESPLEGADA</tspan></text>
+<rect x="76" y="696" width="285" height="120" rx="12" fill="#fef3c7" stroke="#b45309" stroke-width="2" stroke-dasharray="7 5"/><text x="96" y="728" font-size="20" fill="#0f172a" font-weight="650"><tspan x="96" dy="0">Servicio futuro</tspan></text><text x="96" y="759" font-size="16" fill="#334155" font-weight="400"><tspan x="96" dy="0">POST /v1/account</tspan><tspan x="96" dy="25">Variantes CL / CO / PE</tspan></text>
+<rect x="430" y="696" width="275" height="120" rx="12" fill="#fef3c7" stroke="#b45309" stroke-width="2" stroke-dasharray="7 5"/><text x="450" y="728" font-size="20" fill="#0f172a" font-weight="650"><tspan x="450" dy="0">Account · Empresa</tspan></text><text x="450" y="759" font-size="16" fill="#334155" font-weight="400"><tspan x="450" dy="0">External Id propuesto:</tspan><tspan x="450" dy="25">onboardingId</tspan></text>
+<rect x="780" y="696" width="270" height="120" rx="12" fill="#fef3c7" stroke="#b45309" stroke-width="2" stroke-dasharray="7 5"/><text x="800" y="728" font-size="20" fill="#0f172a" font-weight="650"><tspan x="800" dy="0">Contact · 1..N por rol</tspan></text><text x="800" y="759" font-size="16" fill="#334155" font-weight="400"><tspan x="800" dy="0">Representante legal / Facturación</tspan><tspan x="800" dy="25">Deduplicación por definir</tspan></text>
+<rect x="1090" y="696" width="275" height="120" rx="12" fill="#fef3c7" stroke="#b45309" stroke-width="2" stroke-dasharray="7 5"/><text x="1110" y="728" font-size="20" fill="#0f172a" font-weight="650"><tspan x="1110" dy="0">Modelo pendiente</tspan></text><text x="1110" y="759" font-size="16" fill="#334155" font-weight="400"><tspan x="1110" dy="0">Accionistas</tspan><tspan x="1110" dy="25">Beneficiarios finales</tspan></text>
+<path d="M361 756 H430" fill="none" stroke="#b45309" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#amber)"/>
+<path d="M705 756 H780" fill="none" stroke="#b45309" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#amber)"/>
+<text x="729" y="740" font-size="14" fill="#92400e" font-weight="400"><tspan x="729" dy="0">1:N</tspan></text>
+<text x="76" y="866" font-size="16" fill="#92400e" font-weight="400"><tspan x="76" dy="0">El endpoint Account/Contact todavía no existe. Modelo, campos, transacción y permisos requieren definición e implementación.</tspan></text>
+<text x="48" y="945" font-size="16" fill="#334155" font-weight="400"><tspan x="48" dy="0">Línea continua: solución construida localmente     ·     Línea discontinua: diseño propuesto</tspan></text>
+<text x="48" y="974" font-size="15" fill="#64748b" font-weight="400"><tspan x="48" dy="0">Fuente: checkout SF-CLI-NUAM. Este diagrama no certifica despliegue ni prueba HTTP/OAuth end-to-end en UAT.</tspan></text>
+</g></svg>

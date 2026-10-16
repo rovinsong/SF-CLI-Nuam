@@ -1,0 +1,36 @@
+flowchart LR
+  N["Nuam · Backend onboarding"]
+  subgraph SF["Salesforce · solución Lead implementada localmente"]
+    O["OAuth 2.0 Client Credentials<br/>Configuración y conectividad por reconfirmar"]
+    R["Apex REST · POST /v1/lead<br/>ED_NuamOnboardingLeadRest"]
+    S["Validación y mapeo de 4 bloques<br/>ED_NuamOnboardingLeadService + DTO"]
+    L[("Lead<br/>ED_Onboarding_Id__c · único / External Id<br/>15 campos ED_* · LeadSource Onboarding")]
+  end
+  N -->|"1. POST /services/oauth2/token"| O
+  O -->|"2. access_token"| N
+  N -->|"3. JSON + Bearer token"| R
+  R --> S
+  S -->|"4. Upsert por onboardingId"| L
+  S -->|"5. Resultado"| R
+  R -->|"6. 201 / 200 / 400 / 500 + JSON"| N
+  subgraph P["PROPUESTA · PENDIENTE DE IMPLEMENTAR / NO DESPLEGADA"]
+    A["POST /v1/account<br/>Servicio Apex por construir"]
+    AC[("Account · Empresa<br/>External Id propuesto: onboardingId")]
+    C[("Contact · Representante legal / Facturación<br/>1..N por rol · deduplicación por definir")]
+    X["Accionistas y beneficiarios finales<br/>Modelo y alcance pendientes"]
+    A -.-> AC
+    AC -.->|"1:N propuesto"| C
+    A -.-> X
+  end
+  N -.->|"Evolución propuesta · CL / CO / PE"| A
+  style N fill:#e0e7ff,stroke:#4338ca,color:#1f2937
+  style SF fill:#f0f9ff,stroke:#0e7490
+  style P fill:#fffbeb,stroke:#b45309,stroke-dasharray:6 4
+  style O fill:#ede9fe,stroke:#6d28d9,color:#1f2937
+  style R fill:#e0f2fe,stroke:#0369a1,color:#1f2937
+  style S fill:#e0f2fe,stroke:#0369a1,color:#1f2937
+  style L fill:#dcfce7,stroke:#15803d,color:#1f2937
+  style A fill:#fef3c7,stroke:#b45309,stroke-dasharray:6 4,color:#1f2937
+  style AC fill:#fef3c7,stroke:#b45309,stroke-dasharray:6 4,color:#1f2937
+  style C fill:#fef3c7,stroke:#b45309,stroke-dasharray:6 4,color:#1f2937
+  style X fill:#fef3c7,stroke:#b45309,stroke-dasharray:6 4,color:#1f2937
